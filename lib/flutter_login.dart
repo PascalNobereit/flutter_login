@@ -658,9 +658,7 @@ class _FlutterLoginState extends State<FlutterLogin>
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
-             Theme(
-                data: theme,
-                child: Stack(
+             Stack(
                   alignment: Alignment.center,
                   children: <Widget>[
                     Positioned(
@@ -695,7 +693,7 @@ class _FlutterLoginState extends State<FlutterLogin>
                             child: footerWidget))
                   ],
                 ),
-              ),
+              
             
            
             if (!kReleaseMode && widget.showDebugButtons)
