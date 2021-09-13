@@ -658,8 +658,7 @@ class _FlutterLoginState extends State<FlutterLogin>
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
-            SingleChildScrollView(
-              child: Theme(
+             Theme(
                 data: theme,
                 child: Stack(
                   alignment: Alignment.center,
@@ -697,7 +696,8 @@ class _FlutterLoginState extends State<FlutterLogin>
                   ],
                 ),
               ),
-            ),
+            
+           
             if (!kReleaseMode && widget.showDebugButtons)
               _buildDebugAnimationButtons(),
           ],
